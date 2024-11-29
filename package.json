@@ -1,0 +1,72 @@
+{
+    "name": "@cmmv/elastic",
+    "version": "0.0.1",
+    "description": "CMMV (@queue)",
+    "keywords": [
+        "cmmv",
+        "elastic",
+        "fulltext",
+        "search"
+    ],
+    "author": "Andre Ferreira",
+    "publishConfig": {
+        "access": "public"
+    },
+    "engines": {
+        "node": ">= 18.18.0 || >= 20.0.0"
+    },
+    "main": "./dist/cjs/index.js",
+    "module": "./dist/esm/index.js",
+    "types": "./dist/types/index.d.ts",
+    "exports": {
+        ".": {
+            "import": "./dist/esm/index.js",
+            "require": "./dist/cjs/index.js"
+        }
+    },
+    "scripts": {
+        "dev": "nodemon",
+        "build:cjs": "tsc --project tsconfig.cjs.json",
+        "build:esm": "tsc --project tsconfig.esm.json",
+        "build": "npm run build:cjs && npm run build:esm",
+        "test": "vitest",
+        "prepare": "husky",
+        "release": "node scripts/release.js",
+        "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s"
+    },
+    "devDependencies": {
+        "@cmmv/http": "^0.6.5",
+        "@commitlint/cli": "^19.6.0",
+        "@commitlint/config-angular": "^19.6.0",
+        "@commitlint/config-conventional": "^19.6.0",
+        "@elastic/elasticsearch-mock": "^2.0.1",
+        "@swc-node/core": "^1.13.3",
+        "@swc-node/register": "^1.10.9",
+        "@swc/core": "^1.9.3",
+        "@swc/helpers": "^0.5.15",
+        "@types/node": "^22.10.1",
+        "@typescript-eslint/eslint-plugin": "^8.16.0",
+        "@typescript-eslint/parser": "^8.16.0",
+        "chalk": "^5.3.0",
+        "conventional-changelog": "^6.0.0",
+        "conventional-changelog-cli": "^5.0.0",
+        "enquirer": "^2.4.1",
+        "esbuild": "^0.24.0",
+        "esbuild-register": "^3.6.0",
+        "eslint-config-prettier": "^9.1.0",
+        "eslint-plugin-import": "^2.31.0",
+        "execa": "^9.5.1",
+        "husky": "^9.1.7",
+        "lint-staged": "^15.2.10",
+        "nodemon": "^3.1.7",
+        "prettier": "^3.4.1",
+        "semver": "^7.6.3",
+        "tslib": "^2.8.1",
+        "typescript": "^5.7.2",
+        "vitest": "^2.1.6"
+    },
+    "dependencies": {
+        "@cmmv/core": "^0.6.5",
+        "@elastic/elasticsearch": "^8.16.2"
+    }
+}
