@@ -1,6 +1,6 @@
 {
     "name": "@cmmv/elastic",
-    "version": "0.0.3",
+    "version": "0.0.4",
     "description": "CMMV (@elastic)",
     "keywords": [
         "cmmv",
@@ -47,7 +47,7 @@
         "build": "npm run build:cjs && npm run build:esm",
         "test": "vitest",
         "prepare": "husky",
-        "release": "node scripts/release.js",
+        "release": "pnpm run build && node scripts/release.js",
         "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s"
     },
     "devDependencies": {
