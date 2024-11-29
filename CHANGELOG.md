@@ -1,3 +1,12 @@
+## [0.0.3](https://github.com/andrehrferreira/cmmv-elastic/compare/v0.0.2...v0.0.3) (2024-11-29)
+
+
+### Bug Fixes
+
+* package ([708a409](https://github.com/andrehrferreira/cmmv-elastic/commit/708a4095be9ee8cf28b435d2450cf79152452473))
+
+
+
 ## 0.0.2 (2024-11-29)
 
 
