@@ -1,7 +1,7 @@
 {
     "name": "@cmmv/elastic",
     "version": "0.0.2",
-    "description": "CMMV (@queue)",
+    "description": "CMMV (@elastic)",
     "keywords": [
         "cmmv",
         "elastic",
@@ -23,6 +23,22 @@
             "import": "./dist/esm/index.js",
             "require": "./dist/cjs/index.js"
         }
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/andrehrferreira/cmmv-elastic.git"
+    },
+    "bugs": {
+        "url": "https://github.com/andrehrferreira/cmmv-elastic/issues"
+    },
+    "homepage": "https://cmmv.io",
+    "lint-staged": {
+        "**/*.ts": [
+            "prettier --ignore-path ./.prettierignore --write"
+        ],
+        "packages/**/*.json": [
+            "prettier --ignore-path ./.prettierignore --write"
+        ]
     },
     "scripts": {
         "dev": "nodemon",
