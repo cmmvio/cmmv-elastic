@@ -1,7 +1,7 @@
 {
     "name": "@cmmv/elastic",
     "version": "0.0.4",
-    "description": "CMMV (@elastic)",
+    "description": "Elastic Module for CMMV",
     "keywords": [
         "cmmv",
         "elastic",
@@ -35,9 +35,6 @@
     "lint-staged": {
         "**/*.ts": [
             "prettier --ignore-path ./.prettierignore --write"
-        ],
-        "packages/**/*.json": [
-            "prettier --ignore-path ./.prettierignore --write"
         ]
     },
     "scripts": {
@@ -47,7 +44,7 @@
         "build": "npm run build:cjs && npm run build:esm",
         "test": "vitest",
         "prepare": "husky",
-        "release": "pnpm run build && node scripts/release.js",
+        "release": "pnpm run build && node release.js",
         "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s"
     },
     "devDependencies": {
