@@ -1,3 +1,12 @@
+## [0.0.6](https://github.com/cmmvio/cmmv-elastic/compare/v0.0.5...v0.0.6) (2025-01-24)
+
+
+### Bug Fixes
+
+* repository ([62dc5d6](https://github.com/cmmvio/cmmv-elastic/commit/62dc5d6a16a850c777bf01f1c21570e9c47bc5f7))
+
+
+
 ## [0.0.5](https://github.com/cmmvio/cmmv-elastic/compare/v0.0.4...v0.0.5) (2024-12-10)
 
 
