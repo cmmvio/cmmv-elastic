@@ -1,6 +1,6 @@
 {
     "name": "@cmmv/elastic",
-    "version": "0.0.5",
+    "version": "0.0.6",
     "description": "Elastic Module for CMMV",
     "keywords": [
         "cmmv",
@@ -13,7 +13,7 @@
         "access": "public"
     },
     "engines": {
-        "node": ">= 18.18.0 || >= 20.0.0"
+        "node": ">= 20.0.0"
     },
     "main": "./dist/cjs/index.js",
     "module": "./dist/esm/index.js",
@@ -26,10 +26,10 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/andrehrferreira/cmmv-elastic.git"
+        "url": "git+https://github.com/cmmvio/cmmv-elastic.git"
     },
     "bugs": {
-        "url": "https://github.com/andrehrferreira/cmmv-elastic/issues"
+        "url": "https://github.com/cmmvio/cmmv-elastic/issues"
     },
     "homepage": "https://cmmv.io",
     "lint-staged": {
