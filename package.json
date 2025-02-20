@@ -1,6 +1,6 @@
 {
     "name": "@cmmv/elastic",
-    "version": "0.0.6",
+    "version": "0.1.0",
     "description": "Elastic Module for CMMV",
     "keywords": [
         "cmmv",
