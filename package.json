@@ -40,6 +40,7 @@
     "scripts": {
         "build": "cmmv build",
         "release": "cmmv release",
+        "lint": "cmmv lint",
         "test": "vitest",
         "prepare": "husky",
         "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s"

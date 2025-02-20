@@ -1,2 +1,2 @@
-export * from "./elastic.module";
-export * from "./elastic.service";
+export * from './elastic.module';
+export * from './elastic.service';
