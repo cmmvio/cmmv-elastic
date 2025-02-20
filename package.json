@@ -15,13 +15,13 @@
     "engines": {
         "node": ">= 20.0.0"
     },
-    "main": "./dist/cjs/index.js",
-    "module": "./dist/esm/index.js",
-    "types": "./dist/types/index.d.ts",
+    "main": "./dist/cjs/main.js",
+    "module": "./dist/esm/main.js",
+    "types": "./dist/types/main.d.ts",
     "exports": {
         ".": {
-            "import": "./dist/esm/index.js",
-            "require": "./dist/cjs/index.js"
+            "import": "./dist/esm/main.js",
+            "require": "./dist/cjs/main.js"
         }
     },
     "repository": {
@@ -38,48 +38,38 @@
         ]
     },
     "scripts": {
-        "dev": "nodemon",
-        "build:cjs": "tsc --project tsconfig.cjs.json",
-        "build:esm": "tsc --project tsconfig.esm.json",
-        "build": "npm run build:cjs && npm run build:esm",
+        "build": "cmmv build",
+        "release": "cmmv release",
         "test": "vitest",
         "prepare": "husky",
-        "release": "pnpm run build && node release.js",
         "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s"
     },
     "devDependencies": {
-        "@cmmv/http": "^0.6.5",
-        "@commitlint/cli": "^19.6.0",
-        "@commitlint/config-angular": "^19.6.0",
-        "@commitlint/config-conventional": "^19.6.0",
+        "@cmmv/cli": "^0.5.9",
+        "@cmmv/http": "^0.8.18",
+        "@cmmv/view": "^0.8.18",
+        "@commitlint/cli": "^19.7.1",
+        "@commitlint/config-angular": "^19.7.1",
+        "@commitlint/config-conventional": "^19.7.1",
         "@elastic/elasticsearch-mock": "^2.0.1",
-        "@swc-node/core": "^1.13.3",
-        "@swc-node/register": "^1.10.9",
-        "@swc/core": "^1.9.3",
-        "@swc/helpers": "^0.5.15",
-        "@types/node": "^22.10.1",
-        "@typescript-eslint/eslint-plugin": "^8.16.0",
-        "@typescript-eslint/parser": "^8.16.0",
-        "chalk": "^5.3.0",
+        "@tsconfig/node22": "^22.0.0",
+        "@types/node": "^22.13.4",
         "conventional-changelog": "^6.0.0",
         "conventional-changelog-cli": "^5.0.0",
-        "enquirer": "^2.4.1",
-        "esbuild": "^0.24.0",
-        "esbuild-register": "^3.6.0",
-        "eslint-config-prettier": "^9.1.0",
-        "eslint-plugin-import": "^2.31.0",
-        "execa": "^9.5.1",
+        "esbuild": "^0.25.0",
         "husky": "^9.1.7",
-        "lint-staged": "^15.2.10",
-        "nodemon": "^3.1.7",
-        "prettier": "^3.4.1",
-        "semver": "^7.6.3",
+        "lint-staged": "^15.4.3",
         "tslib": "^2.8.1",
-        "typescript": "^5.7.2",
-        "vitest": "^2.1.6"
+        "typescript": "^5.7.3",
+        "vitest": "^2.1.9"
     },
     "dependencies": {
-        "@cmmv/core": "^0.6.5",
-        "@elastic/elasticsearch": "^8.16.2"
+        "@cmmv/core": "^0.8.18",
+        "@elastic/elasticsearch": "^8.17.0"
+    },
+    "pnpm": {
+        "ignoredBuiltDependencies": [
+            "esbuild"
+        ]
     }
 }

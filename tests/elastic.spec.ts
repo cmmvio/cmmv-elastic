@@ -1,7 +1,7 @@
 import { describe, it, beforeEach, expect } from 'vitest';
 import Mock from '@elastic/elasticsearch-mock';
 import { Client } from '@elastic/elasticsearch';
-import { ElasticService } from '../src/services/elastic.service';
+import { ElasticService } from '../src/elastic.service';
 
 describe('ElasticService', () => {
     let mock: Mock;
