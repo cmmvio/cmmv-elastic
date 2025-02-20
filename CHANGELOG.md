@@ -1,3 +1,12 @@
+# [0.1.0](https://github.com/cmmvio/cmmv-elastic/compare/v0.0.6...v0.1.0) (2025-02-20)
+
+
+### Bug Fixes
+
+* dependencies, eslint ([3c7bec4](https://github.com/cmmvio/cmmv-elastic/commit/3c7bec486c5983ee345eea44fda66ebc1e61835d))
+
+
+
 ## [0.0.6](https://github.com/cmmvio/cmmv-elastic/compare/v0.0.5...v0.0.6) (2025-01-24)
 
 

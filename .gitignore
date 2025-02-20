@@ -17,7 +17,6 @@ yarn-debug.log*
 yarn-error.log*
 lerna-debug.log*
 yarn.lock
-pnpm-lock.yaml
 
 # OS
 .DS_Store
@@ -55,3 +54,5 @@ docs/index*.json
 public/sitemap.xml
 docs/*.json
 docs/**/*.json
+.generated
+public
