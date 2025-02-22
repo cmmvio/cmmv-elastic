@@ -2,6 +2,7 @@
     "name": "@cmmv/elastic",
     "version": "0.1.0",
     "description": "Elastic Module for CMMV",
+    "license": "MIT",
     "keywords": [
         "cmmv",
         "elastic",
